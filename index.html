@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head class="head">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game of Life</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+	<script type="text/javascript" src="sketch.js"></script>
+
+  <div class="rainbow-text">
+    The Game Of Life
+  </div>
+
+</head>
+
+<body class="body">
+  <div class="playground">
+    <canvas onclick="showCoords(event)" id="canvas" width="800" height="800"></canvas>
+  </div>
+
+
+  <div class="runGameButton" align="center" onclick="runGame()">
+    <a class="example_a" target="_blank" rel="nofollow noopener" >run</a>
+  </div>
+
+	<div class="input">
+		<input class="textField" type="text" id="survive" value="Neighbors to survive...">
+		<input class="textField" type="text" id="toBeBorn" value="Neighbors to be born...">
+	</div>
+
+</body>
+</html>
